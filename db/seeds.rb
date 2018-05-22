@@ -22,8 +22,8 @@ puts "5 skills created"
     title: "Portfolio title: #{portfolio_item}"  ,
     subtitle: "My great service",
     body: "Vivamus eu turpis quam. Praesent sed consectetur elit, ac egestas enim. Integer euismod interdum ante, ac viverra arcu eleifend dapibus. Quisque eu laoreet nibh. In et orci non magna aliquam efficitur a nec felis. Aliquam iaculis metus lorem, maximus porta lacus molestie eget. Etiam ut lorem nec dui pellentesque pharetra. Aenean laoreet sapien et sem facilisis tempus. Maecenas non dolor eget magna blandit tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vitae sapien tristique, laoreet lectus vel, ornare nibh." ,
-    main_image: "http://via.placeholder.com/350x200" ,
-    thumb_image: "http://via.placeholder.com/600x400" ,
+    main_image: "http://via.placeholder.com/600x400" ,
+    thumb_image: "http://via.placeholder.com/350x200" ,
 
 
   )
