@@ -1,0 +1,19 @@
+module CurrentUserConcern
+  extend ActiveSupport::Concern
+
+  included do
+    before_action :current_user
+  end
+
+  def current_user
+    super ||  guest_user
+  end
+
+  def guest_user
+      super ||  OpenStruct.new(name: "Guest User",
+                               first_name: "Guest",
+                               last_name: "User",
+                               email: "Guest@example.com"
+                               )
+  end
+end
