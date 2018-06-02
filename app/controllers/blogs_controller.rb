@@ -1,11 +1,15 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout "blog"
-  
+
   # GET /blogs
   # GET /blogs.json
   def index
+    binding.pry
     @blogs = Blog.all
+    binding.pry
+    @blogs = Blog.featured_blogs
+    binding.pry
     @page_title = "My portfolio blog"
   end
 
