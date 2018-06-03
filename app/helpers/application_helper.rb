@@ -15,8 +15,4 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
-
-  def copyright_generator
-    BritanniaViewTool::Renderer.copyright 'Jonathan Momperousse', 'All rights reserved'
-  end
 end
