@@ -30,10 +30,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Use postgres as the database for Active Record
+gem "pg"
 
-group :production do
-  gem "pg", "~> 0.20"
-end
 
 
 group :development, :test do
