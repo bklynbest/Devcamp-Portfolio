@@ -11,6 +11,10 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'HTML/CSS')
   end
 
+  def self.by_position
+    order("position ASC")
+  end
+
   after_initialize :set_defaults #Occurs during new action
 
   def set_defaults
