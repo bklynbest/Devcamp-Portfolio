@@ -48,13 +48,3 @@ puts "9 portfolio items created"
     main_image: "http://via.placeholder.com/600x400" ,
     thumb_image: "http://via.placeholder.com/350x200")
   end
-
-  puts "Portfolio item created"
-
-  3.times do |technology|
-    Portfolio.last.technolgies.create!(
-      name: "Technology #{technology}"
-    )
-  end
-
-  puts "3 technolgies created"
