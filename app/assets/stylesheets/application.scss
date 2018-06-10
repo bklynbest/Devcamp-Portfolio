@@ -139,7 +139,6 @@ body {
   }
   .mastfoot {
     position: fixed;
-    bottom: 0;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -168,6 +167,7 @@ body {
 .card-block {
   color: black;
   text-align: left;
+  height: 80%;
 }
 
 .auth-links a {
@@ -182,6 +182,7 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+  color: black;
 }
 
 .app-nav span {
