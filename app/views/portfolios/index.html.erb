@@ -1,6 +1,9 @@
 <div class="album text-muted">
   <div class="container">
     <div class="row <%= "sortable" if logged_in? (:sita_admin) %>">
+      <div class ="col-md-12">
+        <%= link_to "New", new_portfolio_path %>
+      </div>
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
   </div>

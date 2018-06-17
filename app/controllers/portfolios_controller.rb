@@ -28,6 +28,10 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def new
+    @portfolio_item = Portfolio.new
+  end
+
   def edit
   end
 
