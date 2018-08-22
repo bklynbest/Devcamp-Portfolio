@@ -3,19 +3,11 @@
 @import "gritter";
 
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
-
-.navbar {
-  margin-bottom: 0;
-}
 
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #fff;
 }
 
 .jumbotron p:last-child {
@@ -34,7 +26,6 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
 }
 
 .card {
@@ -65,7 +56,3 @@ footer p {
 /*
 * Custom Styles
 */
-
-.portfolio-container {
-  padding-top: 30px;
-}

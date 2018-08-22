@@ -17,7 +17,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          <%= image_tag 'home.jpg', id: 'background' %>
+          <%= image_tag 'store_home.jpeg', id: 'background' %>
 
           <%#= video_tag(
             'Words.mp4',
@@ -30,10 +30,10 @@
           %>
 
           <%= render "shared/application_nav" %>
+          <%= render 'shared/pages_masthead' %>
 
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
           <%= alerts %>
 
           <%= source_helper %>

@@ -1,9 +1,9 @@
 <div class = "container portfolio-container">
-  <div class= "row">
+  <div class= "row"  style="margin-top:  2em";>
     <div class= "col-md-7">
       <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width:"100%" %>
     </div>
-    <div class= "col-md-5">
+    <div class= "col-md-5 card">
       <h1><%= @portfolio_item.title %></h1>
 
       <hr>
@@ -11,6 +11,8 @@
       <em><%= @portfolio_item.subtitle %></em>
 
       <p><%= @portfolio_item.body %></p>
+      <%= link_to "GitHub", githuburl %>
+
 
 <h3>Technologies used:</h3>
 <hr>

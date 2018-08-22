@@ -1,9 +1,34 @@
-<div class="inner cover">
-  <h1 class="cover-heading">Welcome</h1>
-  <p class="lead">“Websites promote you 24/7: No employee will do that.”
-                  ― Paul Cookson
-  </p>
-  <p class="lead">
-    <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
-  </p>
+<div class= "inner cover" style="margin-top: 8em";>
+<hr>
+  <div class= "row">
+    <div class = "col-md-4">
+      <%= image_tag "me2.jpg", width:310, alt:"Profile image"%>
+    </div>
+    <div class= "col-md-6 card">
+      <p>I'm a Web Developer based in Brooklyn, New York.  My area of expertise is Ruby on Rails,
+      and I also enjoy working with front-end technologies like JavaScript and CSS.
+      I have been interested in technology and gaming since I was just a kid.
+      </p>
+      <p>  In my early teens,
+      I enjoyed designing my own MySpace page and fell in love with computers.  I spent countless hours on Xbox Live,
+      where I went by the name Britannia online.  I continue to use it today because the nostalgia that it brings back
+      serves as a reminder of my true interests and motivates me to keep moving forward toward my ultimate goals.
+      My path to becoming a web developer has been winding.  I studied in a Pharmacy program at Long Island University
+      and worked in healthcare for several years.  I’ve learned to manage stress and work through difficult situations with a calm head.  This rewarding work makes me a well-rounded developer and I like using my skills to improve the world.  I’m currently working with CodeDoesGood, a non-profit committed to using the tech community to build solutions to real world problems, where I am helping build their frontend.
+      I’m looking for freelance or full-time web development work in the NYC area.  Check out some of my work here,
+      and contact me if you would like to chat about working together.
+     </p>
+  </div>
+  <div class="col-md-2">
+    <h3>Phone</h3>
+
+    <p><%= number_to_phone "6315077866" %></p>
+    <h3>Email</h3>
+
+    <p><a href ="mailto:bklynbest718@gmail.com?subject=PortfolioContact""email me">Email me</a> </p>
+    <p class="lead">
+      <%= render 'shared/resume' %>
+      <%#= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
+    </p>
+
 </div>

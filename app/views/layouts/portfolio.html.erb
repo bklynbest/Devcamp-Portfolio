@@ -8,19 +8,36 @@
 
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= render 'shared/portfolio_nav' %>
-    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <%= image_tag 'store_home.jpeg', id: 'background' %>
 
-    <%= yield %>
+          <%#= video_tag(
+            'Words.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster:'home.jpg'
+          )
+          %>
 
-    <%= render 'shared/portfolio_footer' %>
-    <%= alerts %>
+          <%= render 'shared/application_nav' %>
+          <%= render 'shared/portfolio_masthead'  %>
+          <%= yield %>
 
-    <%= source_helper %>
+          <%= alerts %>
+
+          <%= source_helper %>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
