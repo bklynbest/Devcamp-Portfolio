@@ -43,7 +43,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Tech News'
+        title: 'Recent Rails Tweets'
       },
     ]
   end
