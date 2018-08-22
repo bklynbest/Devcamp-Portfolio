@@ -11,7 +11,7 @@
       <em><%= @portfolio_item.subtitle %></em>
 
       <p><%= @portfolio_item.body %></p>
-      <%= link_to "GitHub", githuburl, style: "color:red" %>
+      <%= link_to "GitHub", "http://#{@portfolio_item.github_url}", style: "color:red" %>
 
 
 <h3>Technologies used:</h3>
