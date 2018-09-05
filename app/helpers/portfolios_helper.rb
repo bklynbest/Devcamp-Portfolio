@@ -7,8 +7,8 @@ module PortfoliosHelper
     "http://#{@portfolio_item.github_url}"
   end
 
-  def herokuurl
-    "http://#{@portfolio_item.website_url}"
+  def website_url
+    "#{@portfolio_item.website_url}"
   end
 
   def portfolio_img img, type
