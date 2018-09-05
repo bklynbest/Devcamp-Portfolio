@@ -7,6 +7,10 @@ module PortfoliosHelper
     "http://#{@portfolio_item.github_url}"
   end
 
+  def herokuurl
+    "http://#{@portfolio_item.github_url}"
+  end
+
   def portfolio_img img, type
     if img.model.main_image? || img.model.thumb_image?
       img
